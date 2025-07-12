@@ -1,1 +1,17 @@
-theme: jekyll-theme-minimal
+title: "Praminda Jayawardana"
+description: "Portfolio · Distributed Systems · API Gateways · Rust Engineering"
+author:
+  name: "Praminda Jayawardana"
+  github: yourgithubusername
+  linkedin: yourlinkedinusername
+
+remote_theme: jamigibbs/phantom
+markdown: kramdown
+highlighter: rouge
+
+collections:
+  projects:
+    output: true
+
+plugins:
+  - jekyll-remote-theme
