@@ -1,17 +1,11 @@
-title: "Praminda Jayawardana"
-description: "Portfolio · Distributed Systems · API Gateways · Rust Engineering"
-author:
-  name: "Praminda Jayawardana"
-  github: yourgithubusername
-  linkedin: yourlinkedinusername
+title: Portfolio
+description: Personal website
+remote_theme: jamigibbs/portfolio
 
-remote_theme: jamigibbs/phantom
-markdown: kramdown
-highlighter: rouge
+author: 
+  name: Praminda
 
-collections:
-  projects:
-    output: true
-
-plugins:
-  - jekyll-remote-theme
+email: prambdev@gmail.com
+baseurl: "" # for GitHub Pages
+url: "https://praminda.github.io" # update with your GitHub username/repo
+github: [metadata]
