@@ -8,4 +8,8 @@ author:
 email: prambdev@gmail.com
 baseurl: "" # for GitHub Pages
 url: "https://praminda.github.io" # update with your GitHub username/repo
+github_username: praminda
 github: [metadata]
+
+# Build settings
+markdown: kramdown

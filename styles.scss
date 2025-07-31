@@ -24,3 +24,55 @@
 @import "posts";
 @import "pagination";
 @import "message";
+
+main h2 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #4b4040;
+  text-rendering: optimizeLegibility;
+}
+
+ul {
+  font-size: 0.7rem;
+}
+
+.row {
+    max-width: 90rem;
+}
+
+.project-post-links {
+    display: inline-block;
+}
+
+.project-post > p {
+    font-size: 0.8rem;
+}
+.project-post > p > strong {
+    font-size: 0.7rem;
+}
+.project-post ul li:not(.project-post-links) {
+    display: block;
+}
+
+.content-section {
+    text-align: justify;
+}
+
+.project-post-header {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+}
+
+.project-post-header h3 {
+    margin-top: 1.5rem;
+    display: inline;
+}
+
+.project-role {
+    font-size: 0.7rem;
+    color: #777;
+    font-weight: normal;
+}

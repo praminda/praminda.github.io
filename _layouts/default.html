@@ -19,7 +19,7 @@
 
         <div class="large-6 large-offset-3 columns">
 
-            <div class="content-section" style="text-align: justify;">
+            <div class="content-section">
                 {% capture intro %}
                     {% include intro.md %}
                 {% endcapture %}
@@ -27,19 +27,24 @@
             </div>
 
             <main>
-                <h2>Latest Work</h2>
+                <h2>Some of my work</h2>
                 {% for post in site.posts %}
                 <div class="project-post">
-                    <h3><a href="{{ post.site }}">{{ post.title }}</a></h3>
+                    <div class="project-post-header">
+                        <h3>{{ post.title }}</h3>
+                        <span class="project-role">{{ post.role }}</span>
+                    </div>
 
                     {{ post.content }}
 
                     <ul>
-                        <li>
+                        {% if post.git %}
+                        <li class="project-post-links">
                             <a href="{{ post.git }}" aria-label="Github"><i class="fab fa-github"></i></a>
                         </li>
+                        {% endif %}
                         {% if post.site %}
-                        <li>
+                        <li class="project-post-links">
                             <a href="{{ post.site }}" aria-label="Blog"><i class="fa fa-link"></i></a>
                         </li>
                         {% endif %}
@@ -73,7 +78,7 @@
         <div class="large-2 large-offset-1 columns social">
             <ul>
                 <li>
-                    <a href="https://github.com/{{ site.github }}" aria-label="GitHub">
+                    <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
