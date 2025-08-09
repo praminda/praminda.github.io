@@ -6,9 +6,9 @@ role: Lead Engineer
 date: 2024-03-01
 ---
 
-An ETL workflow framework on Macrometa GDN that automates data extraction, transformation, and loading between document collections and external sources. It supports log-based (CDC) and batch ingestion, schema inference, transformations using C8QL, and enables real-time data sync across Oracle, MySQL, PostgreSQL, MongoDB, Snowflake, and more.
+An ETL workflow framework on Macrometa GDN that automates data extraction, transformation, and loading between document collections and external sources. It supports log-based CDC and batch ingestion, schema inference, transformations using C8QL, and enables real-time data sync across Oracle, MySQL, PostgreSQL, MongoDB, Snowflake, and more.
 
-I designed and implemented the workflow management and controller layer for Connection Workflows, including all external APIs for the controller. I also contributed to the Meltano-based workflow execution and Argo Workflows orchestration layer. Many of the available connectors includes my contributions or ownership. I also helped with GUI development and debugging whenever required.
+I designed and implemented the workflow management and controller layer for Connection Workflows, including all external APIs for the controller. I also contributed to the Meltano-based workflow execution and Argo Workflows orchestration layer. Many of the available connectors include my contributions or ownership. I also helped with GUI development and debugging whenever required.
 
 - **Languages**: `Java`, `Python`  
 - **Tools**:  
