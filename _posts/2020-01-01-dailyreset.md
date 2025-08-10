@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Waharaka Mobile App
-site: https://play.google.com/store/apps/details?id=com.waharaka.dailyreset
+android: https://play.google.com/store/apps/details?id=com.waharaka.dailyreset
+apple: https://apps.apple.com/gb/app/waharaka/]id1568761109?platform=iphone
 role: Voluntary Contributor (One of two members)
 date: 2020-01-01
 ---

@@ -48,6 +48,16 @@
                             <a href="{{ post.site }}" aria-label="Blog" target="_blank"><i class="fa fa-link"></i></a>
                         </li>
                         {% endif %}
+                        {% if post.android %}
+                        <li class="project-post-links">
+                            <a href="{{ post.android }}" aria-label="Blog" target="_blank"><i class="fab fa-android"></i></a>
+                        </li>
+                        {% endif %}
+                        {% if post.apple %}
+                        <li class="project-post-links">
+                            <a href="{{ post.apple }}" aria-label="Blog" target="_blank"><i class="fab fa-apple"></i></a>
+                        </li>
+                        {% endif %}
                     </ul>
 
                     <hr />
