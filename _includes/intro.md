@@ -1,8 +1,8 @@
 
-Hello! I’m Praminda Jayawardana, a hands-on lead engineer who designs, builds, and guides teams to deliver secure, high-performance systems at scale.
+Hello! I’m Praminda Jayawardana, 
 
-Over the past decade, I’ve engineered API managers, gateways, authentication frameworks, rate-limiting proxies, and distributed services handling millions of requests per day.
+A Senior Software Engineer you'd trust to get the job done right, when the stakes are high and quality is non-negotiable.
 
-When the stakes are high and quality is non-negotiable, I’m the one you’d trust to get it done right.
+Over the past decade, I've engineered API managers and gateways, authentication frameworks, data pipelines, AI integrated services, and other distributed services handling millions of requests per day.
 
-Recently, I’ve been exploring Web3 and AI technologies, intrigued by their potential to build systems more efficiently and secure them with transparency.
+Recently, I’ve been exploring AI technologies and Web3, intrigued by their potential to build systems more efficiently and secure them with transparency.
