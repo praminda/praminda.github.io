@@ -1,7 +1,5 @@
 
-Hello! I’m Praminda Jayawardana, 
-
-A "Senior" Software Engineer who prefers simple solutions for complex problems.
+Hello! I’m Praminda Jayawardana,
 
 Over the past decade, I've engineered API managers and gateways, authentication frameworks, data pipelines, AI integrated services, and other distributed services handling millions of requests per hour.
 
