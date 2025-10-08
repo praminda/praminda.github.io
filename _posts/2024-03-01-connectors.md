@@ -4,6 +4,7 @@ title: Data Connectors
 site: https://www.macrometa.com/docs/connections
 role: Lead Engineer
 date: 2024-03-01
+priority: 4
 ---
 
 An ETL workflow framework on Macrometa GDN that automates data extraction, transformation, and loading between document collections and external sources. It supports log-based CDC and batch ingestion, schema inference, transformations using C8QL, and enables real-time data sync across Oracle, MySQL, PostgreSQL, MongoDB, Snowflake, and more.
