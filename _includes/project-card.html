@@ -1,0 +1,33 @@
+<div class="project-post">
+    <div class="project-post-header">
+        <h3>{{ include.post.title }}</h3>
+        <span class="project-role">{{ include.post.role }}</span>
+    </div>
+
+    {{ include.post.content }}
+
+    <ul>
+        {% if include.post.git %}
+        <li class="project-post-links">
+            <a href="{{ include.post.git }}" aria-label="Github"><i class="fab fa-github"></i></a>
+        </li>
+        {% endif %}
+        {% if include.post.site %}
+        <li class="project-post-links">
+            <a href="{{ include.post.site }}" aria-label="Blog" target="_blank"><i class="fa fa-link"></i></a>
+        </li>
+        {% endif %}
+        {% if include.post.android %}
+        <li class="project-post-links">
+            <a href="{{ include.post.android }}" aria-label="Blog" target="_blank"><i class="fab fa-android"></i></a>
+        </li>
+        {% endif %}
+        {% if include.post.apple %}
+        <li class="project-post-links">
+            <a href="{{ include.post.apple }}" aria-label="Blog" target="_blank"><i class="fab fa-apple"></i></a>
+        </li>
+        {% endif %}
+    </ul>
+
+    <hr />
+</div>

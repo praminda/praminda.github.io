@@ -49,43 +49,38 @@
             </div>
 
             <main>
-                <h2>My favorite projects</h2>
-                {% assign posts = site.posts | sort: 'priority' %}
-                {% for post in posts %}
-                <div class="project-post">
-                    <div class="project-post-header">
-                        <h3>{{ post.title }}</h3>
-                        <span class="project-role">{{ post.role }}</span>
+                <h2>Projects</h2>
+                
+                <!-- Foundation 6 Tabs -->
+                <ul class="tabs" data-tabs id="project-tabs">
+                    <li class="tabs-title is-active"><a href="#api-projects" aria-selected="true">API</a></li>
+                    <li class="tabs-title"><a href="#ai-projects">AI</a></li>
+                    <li class="tabs-title"><a href="#auth-projects">Auth</a></li>
+                    <li class="tabs-title"><a href="#data-projects">Data</a></li>
+                    <li class="tabs-title"><a href="#mobile-projects">Mobile</a></li>
+                    <li class="tabs-title"><a href="#all-projects">All</a></li>
+                </ul>
+
+                <div class="tabs-content" data-tabs-content="project-tabs">
+                    <!-- Dynamic Category Tabs -->
+                    {% assign all_categories = site.posts | map: 'categories' | flatten | uniq | sort %}
+                    {% for category in all_categories %}
+                    <div class="tabs-panel{% if category == 'API' %} is-active{% endif %}" id="{{ category | downcase }}-projects">
+                        {% assign category_posts = site.posts | where_exp: "post", "post.categories contains category" | sort: 'priority' %}
+                        {% for post in category_posts %}
+                        {% include project-card.html post=post %}
+                        {% endfor %}
                     </div>
+                    {% endfor %}
 
-                    {{ post.content }}
-
-                    <ul>
-                        {% if post.git %}
-                        <li class="project-post-links">
-                            <a href="{{ post.git }}" aria-label="Github"><i class="fab fa-github"></i></a>
-                        </li>
-                        {% endif %}
-                        {% if post.site %}
-                        <li class="project-post-links">
-                            <a href="{{ post.site }}" aria-label="Blog" target="_blank"><i class="fa fa-link"></i></a>
-                        </li>
-                        {% endif %}
-                        {% if post.android %}
-                        <li class="project-post-links">
-                            <a href="{{ post.android }}" aria-label="Blog" target="_blank"><i class="fab fa-android"></i></a>
-                        </li>
-                        {% endif %}
-                        {% if post.apple %}
-                        <li class="project-post-links">
-                            <a href="{{ post.apple }}" aria-label="Blog" target="_blank"><i class="fab fa-apple"></i></a>
-                        </li>
-                        {% endif %}
-                    </ul>
-
-                    <hr />
+                    <!-- All Projects Tab -->
+                    <div class="tabs-panel" id="all-projects">
+                        {% assign posts = site.posts | sort: 'priority' %}
+                        {% for post in posts %}
+                        {% include project-card.html post=post %}
+                        {% endfor %}
+                    </div>
                 </div>
-                {% endfor %}
             </main>
 
             <footer>

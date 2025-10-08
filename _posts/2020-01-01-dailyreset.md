@@ -6,6 +6,7 @@ apple: https://apps.apple.com/gb/app/waharaka/]id1568761109?platform=iphone
 role: Voluntary Contributor (One of two members)
 date: 2020-01-01
 priority: 7
+categories: [Mobile]
 ---
 
 A Flutter-based cross-platform mobile application (iOS, Android) for browsing, viewing, and listening to Buddhist audio and video sermons. The app integrates with the existing backend supporting the website https://waharaka.com. Users can browse sermons by tags or keyword search. It includes a built-in audio player with seek, play, and pause functionality, as well as background playback. Users can also download audio sermons to their devices. Video listings are served via YouTube APIs, redirecting users to the YouTube app for playback. The app currently has over 5k downloads and a 4.9 rating from more than 270 reviews.
